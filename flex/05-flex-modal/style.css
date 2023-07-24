@@ -20,6 +20,12 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+
+  /* started editing modal here */
+  display: flex;
+  padding: 15px;
+  gap: 15px;
+
 }
 
 .icon {
@@ -33,6 +39,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  /* new values here */
+  flex-shrink: 0;
 }
 
 .close-button {
@@ -48,12 +57,16 @@ body {
   justify-content: center;
   border: 1px solid #eee;
   padding: 0;
+
+  /* adding values here */
+  margin-left: auto;
 }
 
 button {
   cursor: pointer;
   padding: 8px 16px;
   border-radius: 8px;
+
 }
 
 button.continue {
@@ -66,4 +79,24 @@ button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+}
+
+/* new classes */
+.header {
+  display: flex;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.header-text-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.nav-buttons {
+  /*adding values here! */
+  display: flex;
+  gap: 4px;
+  margin-top: 6px;
 }
